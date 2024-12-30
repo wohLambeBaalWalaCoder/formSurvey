@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <style>
+      body {
+        font-family: Verdana;
+        text-align: center;
+        background-color: rgb(113 113 122);
+      }
+
+      form {
+        max-width: 500px;
+        background-color: white;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 50px auto;
+        padding: 30px 20px;
+      }
+
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+
+      .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }   
+
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 90%;
+        }
+
+
+
+          /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+
+
+         /* Styling Button */
+         button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Show me Your Skills</h1>
+
+    <form id="form">
+      <div class="form-control">
+        <label for="name" id="label-name"> Name </label>
+
+        <input type="text" name="" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="label-email"> Email </label>
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="form-control">
+        <label for="age" id="label-age"> Age </label>
+        <input type="text" id="age" placeholder="Enter your age" />
+      </div>
+
+      <div class="form-control">
+        <label for="role">Which Option best describe you</label>
+        <select name="role" id="">
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label>Would You recommend my repo to anyone.?</label>
+        <label for=""><input type="radio" name="recommed-1" id="">Yes</label>
+        <label for=""><input type="radio" name="recommed-2" id="">No</label>
+        <label for=""><input type="radio" name="recommed-3" id="">Maybe</label>
+      </div>
+
+      <div class="form-control">
+        <label for="">Languages and Framework Known <small>(Check all that apply)</small></label>
+        <label for="inp-1"><input type="checkbox" name="" id="">C</label>
+        <label for="inp-2"><input type="checkbox" name="" id="">C++</label>
+        <label for="inp-3"><input type="checkbox" name="" id="">Angular</label>
+        <label for="inp-4"><input type="checkbox" name="" id="">React</label>
+        <label for="inp-5"><input type="checkbox" name="" id="">Laravel</label>
+        <label for="inp-6"><input type="checkbox" name="" id="">Java</label>
+        
+      </div>
+
+
+
+      <div class="form-control">
+        <label for="">Any Comment or suggestions</label>
+        <textarea name="comment" id="">
+            Enter your comment here
+        </textarea>
+      </div>
+
+      <button type="submit" value="submit">
+        Submit
+    </button>
+
+    </form>
+  </body>
+</html>
